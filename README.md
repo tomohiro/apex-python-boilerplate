@@ -17,3 +17,11 @@ Install dependencies for development:
 ```
 $ pip installl -r requirements.txt -t vendor
 ```
+
+
+Testing
+--------------------------------------------------------------------------------
+
+```
+$ ./test_runner.py
+```
