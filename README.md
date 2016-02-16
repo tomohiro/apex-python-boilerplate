@@ -15,7 +15,7 @@ Getting Started
 Install dependencies for development:
 
 ```
-$ pip installl -r requirements.txt -t vendor
+$ pip install -r requirements.txt -t vendor
 ```
 
 
