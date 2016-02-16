@@ -15,5 +15,5 @@ Gettint Started
 Install dependencies for development:
 
 ```
-$ pip installl -r requirements-dev.txt -t vendor
+$ pip installl -r requirements.txt -t vendor
 ```
