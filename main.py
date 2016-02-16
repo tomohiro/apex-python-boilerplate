@@ -1,6 +1,6 @@
 import config
-from src import example
+from src.example import Example
 
 def handle(event, context):
-    example.work()
+    print Example().work()
     return event

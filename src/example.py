@@ -1,2 +1,4 @@
-def work():
-    print 'Hello, World!'
+class Example:
+    """ Example Class """
+    def work(self):
+        return 'Hello, World!'
