@@ -9,7 +9,7 @@ Requirements
 - pip
 
 
-Gettint Started
+Getting Started
 --------------------------------------------------------------------------------
 
 Install dependencies for development:
