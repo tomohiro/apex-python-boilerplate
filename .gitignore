@@ -15,7 +15,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+lib
 lib64/
 parts/
 sdist/
@@ -67,7 +67,3 @@ target/
 
 # pyenv
 .python-version
-
-# Third-party libraries
-/vendor/*/
-/vendor/*.py
