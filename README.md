@@ -5,7 +5,7 @@ Apex Python Boilerplate for AWS Lambda function
 Requirements
 --------------------------------------------------------------------------------
 
-- Python 2.7
+- Python 2.7 (Recommend [yyuu/pyenv: Simple Python version management](https://github.com/yyuu/pyenv))
 - pip
 - virtualenv
 
