@@ -7,6 +7,8 @@ Requirements
 
 - Python 2.7
 - pip
+- nose
+- tox
 
 
 Getting Started
@@ -23,5 +25,5 @@ Testing
 --------------------------------------------------------------------------------
 
 ```
-$ ./test_runner.py
+$ make test
 ```
