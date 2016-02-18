@@ -1,0 +1,6 @@
+.apexignore
+tests/*
+Makefile
+README.md
+requirements.txt
+tox.ini
