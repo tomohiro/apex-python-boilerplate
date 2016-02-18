@@ -13,37 +13,59 @@ Requirements
 Getting Started
 --------------------------------------------------------------------------------
 
-Install dependencies for runtime:
-
-```
-$ make deps
-```
-
-### Development
+### Initialize an Apex project
 
 Create environment by `virtualenv`:
 
-```
+```sh
 $ virtualenv env
 ```
 
 Activate the environment:
 
-```
-$ . env/bin/activate
+```sh
+$ . env/bin/activate  # If you want to exit environment, just type `deactivate`
 ```
 
 Install dependencies:
 
+```sh
+$ pip install -r requirements.txt
 ```
-$ pip install -r requirements-dev.txt
+
+
+Development AWS Lambda functions
+--------------------------------------------------------------------------------
+
+Move to the `example` function directory:
+
+```
+$ cd functions/example
+```
+
+Install dependencies:
+
+```sh
 $ make deps
 ```
 
+### Testing
 
-Testing
---------------------------------------------------------------------------------
-
-```
+```sh
 $ make test
 ```
+
+### Deploy
+
+```sh
+$ make dist
+$ apex deploy example --chdir ../../ --log-level debug
+```
+
+
+LICENSE
+--------------------------------------------------------------------------------
+
+&copy; 2016 Tomohiro TAIRA.
+
+This project is licensed under the MIT license. See [LICENSE](LICENSE) for details.

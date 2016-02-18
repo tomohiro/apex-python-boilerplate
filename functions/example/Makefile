@@ -7,10 +7,12 @@ deps:
 dist: clean deps
 
 test:
-	tox
+	@tox
 
 clean:
 	find . -iname '*.pyc' | xargs rm -f
+	rm -rf build
+	rm -rf .tox
 	rm -rf example.egg-info
 	rm -rf lib
 
