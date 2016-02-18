@@ -61,3 +61,11 @@ $ make test
 $ make dist
 $ apex deploy example --chdir ../../ --log-level debug
 ```
+
+
+LICENSE
+--------------------------------------------------------------------------------
+
+&copy; 2016 Tomohiro TAIRA.
+
+This project is licensed under the MIT license. See [LICENSE](LICENSE) for details.
