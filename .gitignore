@@ -64,6 +64,3 @@ target/
 
 # IPython Notebook
 .ipynb_checkpoints
-
-# pyenv
-.python-version
