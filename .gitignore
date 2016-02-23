@@ -64,3 +64,6 @@ target/
 
 # IPython Notebook
 .ipynb_checkpoints
+
+# Direnv
+.envrc
