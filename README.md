@@ -15,18 +15,6 @@ Getting Started
 
 ### Initialize an Apex project
 
-Create environment by `virtualenv`:
-
-```sh
-$ virtualenv env
-```
-
-Activate the environment:
-
-```sh
-$ . env/bin/activate  # If you want to exit environment, just type `deactivate`
-```
-
 Install dependencies:
 
 ```sh
