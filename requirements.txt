@@ -1,2 +1,8 @@
+# Testing
 nose==1.3.7
 tox==2.3.1
+
+# Lint
+hacking
+flake8-import-order
+flake8-pep257
