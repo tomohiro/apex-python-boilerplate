@@ -1,14 +1,27 @@
+TOP = $(shell cd ../../ && pwd)
+
+help:
+	@echo "Please type: make [target]"
+	@echo "  all    Run several tasks. (clean/deps/lint/test)"
+	@echo "  deps   Install runtime dependencies"
+	@echo "  dist   Ship packages to upload to AWS Lambda"
+	@echo "  lint   Lint sources"
+	@echo "  test   Run tests"
+	@echo "  clean  Cleanup artifacts, temporary files"
+	@echo "  help   Show this help messages"
+
+all: clean deps lint test
+
 deps:
-	@if [ ! -d lib ]; then\
-		mkdir lib; \
-	fi
+	@[ ! -d lib ] && mkdir lib || :
 	pip install -r requirements-dev.txt -t lib --upgrade
 
 dist: clean
-	@if [ ! -d lib ]; then\
-		mkdir lib; \
-	fi
-	pip install -r requirements.txt -t lib --upgrade
+	@[ ! -d lib ] && mkdir lib || :
+	pip install -r requirements.txt -t lib
+
+lint:
+	@flake8 --config $(TOP)/.flake8 src/
 
 test:
 	@tox
@@ -20,4 +33,4 @@ clean:
 	rm -rf *.egg-info
 	rm -rf lib
 
-PHONY: deps dist test clean
+.PHONY: help deps dist lint test clean
