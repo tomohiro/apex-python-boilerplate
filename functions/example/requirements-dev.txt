@@ -1,2 +1,3 @@
-moto
 -r requirements.txt
+moto
+nose
