@@ -21,6 +21,13 @@ Install dependencies:
 $ pip install -r requirements.txt
 ```
 
+Create IAM role to execute lambda functions:
+
+```sh
+$ apex infra plan    # Dry-run
+$ apex infra apply   # Apply changes
+```
+
 
 Development AWS Lambda functions
 --------------------------------------------------------------------------------
