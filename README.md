@@ -6,8 +6,12 @@ Requirements
 --------------------------------------------------------------------------------
 
 - Python 2.7 (Recommend [yyuu/pyenv: Simple Python version management](https://github.com/yyuu/pyenv))
-- pip
-- virtualenv
+    - pip
+    - virtualenv
+- Ruby 2.3.1 (Recoomend [rbenv/rbenv: Groom your app’s Ruby environment with rbenv](https://github.com/rbenv/rbenv))
+    - RubyGems
+    - Bundler
+- Terraform
 
 
 Getting Started
@@ -19,6 +23,7 @@ Install dependencies:
 
 ```sh
 $ pip install -r requirements.txt
+$ bundle install --path vendor/bundle
 ```
 
 Create IAM role to execute lambda functions:
@@ -31,6 +36,8 @@ $ apex infra apply   # Apply changes
 
 Development AWS Lambda functions
 --------------------------------------------------------------------------------
+
+### Create a function
 
 Move to the `example` function directory:
 
@@ -55,6 +62,15 @@ $ make test
 ```sh
 $ make dist
 $ apex deploy example --chdir ../../ --log-level debug
+```
+
+
+### Project testing
+
+Run all tests:
+
+```sh
+$ bundle exec rake spec
 ```
 
 

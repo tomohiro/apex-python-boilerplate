@@ -68,3 +68,11 @@ target/
 # Direnv
 .envrc
 .direnv
+
+# Ruby/Bundler
+.bundle
+vendor
+
+# Terraform
+*.tfstate
+*.tfstate.backup
