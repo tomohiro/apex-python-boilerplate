@@ -1,4 +1,5 @@
 {
   "name": "apex-python-boilerplate",
-  "description": "Apex Python Boilerplate for AWS Lambda function"
+  "description": "Apex Python Boilerplate for AWS Lambda function",
+  "role": "arn:aws:iam::627601271476:role/LambdaFunctionExecutor"
 }
