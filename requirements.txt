@@ -1,6 +1,7 @@
 # Testing
 nose
 tox
+python-lambda-local
 
 # Lint
 hacking
