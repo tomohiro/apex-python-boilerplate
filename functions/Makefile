@@ -7,6 +7,7 @@ help:
 	@echo "  dist   Ship packages to upload to AWS Lambda"
 	@echo "  lint   Lint sources"
 	@echo "  test   Run tests"
+	@echo "  run    Run the function on local environment"
 	@echo "  clean  Cleanup artifacts, temporary files"
 	@echo "  help   Show this help messages"
 
@@ -26,6 +27,13 @@ lint:
 test:
 	@tox
 
+run:
+	@if [ -d events ]; then\
+		for json in `ls events/*.json`; do\
+			python-lambda-local -f handle main.py $$json;\
+		done;\
+	fi;
+
 clean:
 	find . -iname '*.pyc' | xargs rm -f
 	rm -rf build
@@ -33,4 +41,4 @@ clean:
 	rm -rf *.egg-info
 	rm -rf lib
 
-.PHONY: help deps dist lint test clean
+.PHONY: help deps dist lint test run clean
