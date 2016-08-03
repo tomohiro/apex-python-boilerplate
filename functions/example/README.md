@@ -17,7 +17,7 @@ List the dependency modules to here.
 Tasks for Development AWS Lambda functions
 --------------------------------------------------------------------------------
 
-`make dpes` installs dependency modules:
+`make deps` installs dependency modules:
 
 ```sh
 $ make deps
@@ -33,16 +33,10 @@ $ make test
 
 ### Deploy
 
-`make dist` runs cleanup and vendoring dependency modules to lib directory:
-
-```sh
-$ make dist
-```
-
 `apex deploy {function name}` to deploy to AWS Lambda.
 
 ```sh
-$ apex deploy example --chdir ../../ --log-level debug
+$ apex deploy example --chdir ../../
 ```
 
 ### Cleanup
