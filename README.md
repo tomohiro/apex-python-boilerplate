@@ -60,7 +60,6 @@ $ make test
 ### Deploy
 
 ```sh
-$ make dist
 $ apex deploy example --chdir ../../ --log-level debug
 ```
 
