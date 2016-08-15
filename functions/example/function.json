@@ -1,7 +1,7 @@
 {
   "description": "Python example function",
   "runtime": "python",
-  "hook": {
+  "hooks": {
     "build": "make dist",
     "clean": "make clean"
   }
