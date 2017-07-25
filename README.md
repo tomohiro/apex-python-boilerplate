@@ -76,6 +76,6 @@ $ bundle exec rake spec
 LICENSE
 --------------------------------------------------------------------------------
 
-&copy; 2016 Tomohiro TAIRA.
+&copy; 2017 Tomohiro TAIRA.
 
 This project is licensed under the MIT license. See [LICENSE](LICENSE) for details.
