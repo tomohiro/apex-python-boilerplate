@@ -1,3 +1,4 @@
 -r requirements.txt
 moto
 nose
+better_exceptions
